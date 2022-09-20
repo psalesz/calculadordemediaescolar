@@ -35,9 +35,14 @@ public class HelloWorld
         else if (media > 6.0) {
             Console.WriteLine("ESTE ALUNO FOI APROVADO");
         }
-        Console.WriteLine("Deseja calcular a média de outro aluno digite 'x' ");
+        
+        Console.WriteLine("Deseja calcular a média de outro aluno digite 'x' se deseja encerrar o programa digite 's' ");
         char repetir;
         repetir = char.Parse(Console.ReadLine());
+        
+        if (repetir == 's') {
+         Console.WriteLine("Seu programa de calcular média escolar, foi concluído e finalizado com sucesso");
+        }
         
         while (repetir == 'x') {
             Console.WriteLine ("Digite o nome do aluno:");
@@ -67,6 +72,12 @@ public class HelloWorld
         }
         Console.WriteLine("Deseja calcular a média de outro aluno digite 'x' ");
         repetir = char.Parse(Console.ReadLine());
+        
+        if (repetir != 'x') {
+         Console.WriteLine("Seu programa de calcular média escolar, foi concluído e finalizado com sucesso");
         }
+            
+        }
+    
     }
 }
